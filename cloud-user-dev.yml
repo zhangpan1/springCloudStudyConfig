@@ -38,3 +38,10 @@ spring:
     hibernate:
       ddl-auto: none
 envName: devUser3
+#服务注册地址配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8801/eureka/
+  instance:
+    prefer-ip-address: true
